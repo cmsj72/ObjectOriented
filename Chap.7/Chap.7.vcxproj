@@ -153,6 +153,7 @@
     </ClCompile>
     <ClCompile Include="5 객체와 함수.cpp" />
     <ClCompile Include="6 임시 객체.cpp" />
+    <ClCompile Include="7 정적 멤버.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

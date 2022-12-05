@@ -33,5 +33,8 @@
     <ClCompile Include="6 임시 객체.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7 정적 멤버.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
