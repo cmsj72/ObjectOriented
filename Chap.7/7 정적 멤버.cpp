@@ -29,6 +29,10 @@ class Car {
 	string color;
 	static int count;
 public:
+	//	정적 상수
+	//	선언과 동시에 초기화 가능(단, 정수형만 가능)
+	const static int MAX_PASSENGER = 5;
+	const static int MAX_SPEED = 300;
 	Car(int s = 0, int g = 1, string c = "white") : speed(s), gear(s), color(c) {
 		//count = 0;	// 잘못된 초기화
 		count++;
@@ -39,10 +43,24 @@ public:
 	~Car() {
 		count--;
 	}
+
+	//	정적 멤버 함수도 클래스의 모든 객체들이 공유
+	//	클래스의 이름을 통하여 호출
+	//	객체를 만들지 않고 호출 가능 "Car::getCount();"
+	//	정적 멤버 함수는 객체가 생성되지 않은 상태에서 호출되는 멤버 함수이므로
+	//	정적 변수와 지역 변수만 사용 가능(일반 멤버 변수 사용 X)
+	//	일반 멤버 함수 호출 역시 오류(일반 멤버 함수도 객체가 생성되어야만 사용 가능하기 때문)
+	static int getCount() {
+		return count;
+	}
 };
 
 //	정적 변수의 초기화는 전역 변수와 비슷하게 클래스 외부에서 정의
 int Car::count = 0;
+
+//	인스턴스 변수들은 생성자 안에서 초기화 하지만 정적 변수는 클래스의 외부에서 초기화
+//	정적 변수는 객체를 만들지 않고서도 사용될 수 있다. 객체가 없으므로 "Car::count"로 접근
+//	
 
 int main() {
 	Car c1;
