@@ -159,6 +159,9 @@
     </ClCompile>
     <ClCompile Include="7 정적 멤버.cpp" />
     <ClCompile Include="8 객체 배열.cpp" />
+    <ClCompile Include="9 클래스와 클래스 간의 관계.cpp" />
+    <ClCompile Include="예제1.cpp" />
+    <ClCompile Include="예제2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
