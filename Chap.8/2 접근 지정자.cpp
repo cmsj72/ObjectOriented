@@ -42,6 +42,7 @@ void Manager::display() {
 }
 
 int main() {
+	//https://thrillfighter.tistory.com/531 읽어봐야할 사이트
 	Manager m;
 	m.setSalary(2000);	// 부모 클래스의 공용 멤버 함수 사용
 	m.display();

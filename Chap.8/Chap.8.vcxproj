@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="1 상속의 개요.cpp" />
     <ClCompile Include="2 접근 지정자.cpp" />
+    <ClCompile Include="3 상속과 생성자,소멸자.cpp" />
+    <ClCompile Include="4 재정의-1.cpp" />
+    <ClCompile Include="4 재정의-2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
