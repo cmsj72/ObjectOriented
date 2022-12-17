@@ -144,6 +144,8 @@
     <ClCompile Include="3 상속과 생성자,소멸자.cpp" />
     <ClCompile Include="4 재정의-1.cpp" />
     <ClCompile Include="4 재정의-2.cpp" />
+    <ClCompile Include="5 부모 클래스를 상속받는 세 가지 방법.cpp" />
+    <ClCompile Include="6 다중 상속.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
