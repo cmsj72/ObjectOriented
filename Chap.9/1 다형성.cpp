@@ -57,6 +57,17 @@ public:
 	}
 };
 
+#pragma region 함수의 매개 변수
+//	형변환 규칙은 함수 호출 시에도 그대로 적용된다.
+	//	함수의 매개 변수는 자식 클래스보다는 부모 클래스 타입으로 선언하는 것이 좋다.
+	//	예를 들어 도형을 평행 이동하는 함수를 move()로 구현하는 경우, Rectangle과 Circle을 받는 함수를 별도로 작성할 것이 아니라
+	//	다음과 같이 함수의 매개 변수를 Shape 클래스 참조로 정의하면 모든 종류의 도형을 전부 매개 변수로 받을 수 있다.
+void move(Shape& s, int sx, int sy) {
+	s.setOrigin(sx, sy);
+}
+#pragma endregion
+
+
 int main() {
 #pragma region 상향 형변환(up-casting)
 	//	다형성은 객체 포인터를 통해 이루어짐
@@ -86,6 +97,16 @@ int main() {
 	//	이것을 DerivedClass 타입으로 하향 형변환을 하게 되면 BaseClass에는 없는 멤버를 참조할 수도 있다.(이 때 오류발생)
 	//	이것을 방지하기 위해서는 dynamic_cast라는 진보된 형변환 연산자를 사용하는 것이 좋다(뒤에서 학습)
 #pragma endregion
+
+#pragma region 함수의 매개 변수	
+	Rectangle r;
+	move(r);
+	
+	Circle c;
+	move(c);
+	return 0;
+#pragma endregion
+
 
 	Shape* ps = new Rectangle();	//	상향 형변환
 	ps->setOrigin(10, 10);
