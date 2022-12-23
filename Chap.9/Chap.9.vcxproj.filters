@@ -24,5 +24,11 @@
     <ClCompile Include="2 가상 함수-2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3 참조자와 가상함수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4 가상 소멸자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
