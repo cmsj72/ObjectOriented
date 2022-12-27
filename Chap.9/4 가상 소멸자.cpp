@@ -9,7 +9,11 @@ public:
 		s = new char[strlen(p) + 1];
 		strcpy(s, p);
 	}
-	~String() {
+	/*~String() {
+		cout << "String() ¼Ò¸êÀÚ" << endl;
+		delete[] s;
+	}*/
+	virtual ~String() {
 		cout << "String() ¼Ò¸êÀÚ" << endl;
 		delete[] s;
 	}
