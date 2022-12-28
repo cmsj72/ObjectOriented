@@ -32,10 +32,45 @@ public:
 	void setHeight(int h) {
 		height = h;
 	}
+	//	추상 메소드를 재정의 하지 않으면 오류 발생(추상 클래스를 상속받는 자식 클래스는 반드시 추상 메소드를 재정의 해야함)
 	void draw() {
 		cout << "Rectangle Draw" << endl;
 	}
 };
+
+#pragma region 예제1
+//	추상 클래스는 추상적인 개념을 표현할 수 있다.
+class Animal {
+	virtual void move() = 0;
+	virtual void eat() = 0;
+	virtual void speak() = 0;
+};
+class Lion : public Animal {
+	void move() {
+		cout << "사자의 무브" << endl;
+	}
+	void eat() {
+		cout << "사자의 eat" << endl;
+	}
+	void speak() {
+		cout << "사자의 스피크" << endl;
+	}
+};
+#pragma endregion
+
+#pragma region 예제2
+//	추상 클래스는 객체들 사이에 상호 작용하기 위한 인터페이스를 정의하는 용도로 사용할 수 있다.
+class RemoteControl {
+	virtual void turnOn() = 0;
+	virtual void turnOff() = 0;
+};
+class Television : public RemoteControl {
+	void turnOn() {};
+	void turnOff() {};
+};
+#pragma endregion
+
+
 
 
 //	Shape는 추상 클래스이기 때문에 객체 생성할 수 없다.
