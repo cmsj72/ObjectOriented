@@ -21,5 +21,14 @@
     <ClCompile Include="2 연산자 중복.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3 피연산자의 타입이 다른 연산.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4 == 연산자의 중복.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5 출력 연산자 〈〈의 중복.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
