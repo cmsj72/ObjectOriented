@@ -146,6 +146,7 @@
     <ClCompile Include="3 피연산자의 타입이 다른 연산.cpp" />
     <ClCompile Include="4 == 연산자의 중복.cpp" />
     <ClCompile Include="5 출력 연산자 〈〈의 중복.cpp" />
+    <ClCompile Include="6 입력 연산자 〉〉의 중복.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
